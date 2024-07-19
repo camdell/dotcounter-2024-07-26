@@ -59,10 +59,10 @@ if args.output is not None or args.show:
             cv2.circle(output, (x, y), r, (0, 0, 0), 2)
             cv2.rectangle(output, (x - 5, y - 5), (x + 5, y + 5), (0, 0, 0), -1)
         ax.imshow(cv2.cvtColor(output, cv2.COLOR_BGR2RGB))
-        ax.set_title(f'{color.title()} = {len(circles)}')
+        ax.set_title(f'{color.title()} = {len(circles)}', loc='left')
 
     axes[0, 0].imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-    axes[0, 0].set_title('Original')
+    axes[0, 0].set_title('Original', loc='left')
     fig.suptitle('Counts of Red, Green, Yellow Dots')
 
     if args.output is not None:
