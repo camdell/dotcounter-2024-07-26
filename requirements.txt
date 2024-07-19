@@ -1,0 +1,5 @@
+numpy==1.*
+scipy
+opencv-python
+matplotlib==3.9.*
+
